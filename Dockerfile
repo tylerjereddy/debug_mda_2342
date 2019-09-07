@@ -1,6 +1,8 @@
-FROM ubuntu:18.04
+FROM i386/ubuntu:bionic
 
 RUN apt-get update && apt-get install -y \
-    git
+    git \
+    python3 \
+    python3-pip
 
 RUN git clone https://github.com/MDAnalysis/mdanalysis.git
